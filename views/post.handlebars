@@ -1,0 +1,27 @@
+<h1>POST Request Received!</h1>
+<table>
+    {{#if queryData}}
+    <h2>Query data submitted:</h2>
+    {{#each queryData}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+    {{/each}}
+    {{else}}
+    <h2>No query data submitted.</h2>
+    {{/if}}
+</table>
+<table>
+    {{#if bodyData}}
+    <h2>Body data submitted:</h2>
+    {{#each bodyData}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+    {{/each}}
+    {{else}}
+    <h2>No body data submitted.</h2>
+    {{/if}}
+</table>
